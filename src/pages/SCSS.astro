@@ -1,0 +1,22 @@
+---
+
+import Layout from "../layouts/Main.astro"
+
+import SCSS_Common      from "../styles/common.scss?url"
+import SCSS_Production  from "../styles/production.scss?url"
+import SCSS_Development from "../styles/development.scss?url"
+
+const is_Production    = (process.env["ExecutionContext"] === "Production")
+const SCSS_Environment = (is_Production ? SCSS_Production : SCSS_Development)
+
+---
+
+
+<head>
+	<link rel="stylesheet" href={SCSS_Common     } as="style"/>
+	<link rel="stylesheet" href={SCSS_Environment} as="style"/>
+</head>
+
+<Layout title="SCSS">
+	<h1>{"SCSS"}</h1>
+</Layout>

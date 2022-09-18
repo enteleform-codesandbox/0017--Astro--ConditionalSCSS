@@ -1,0 +1,24 @@
+{
+
+	"name":    "@example/minimal",
+	"type":    "module",
+	"version": "0.0.1",
+	"private": true,
+
+	"scripts": {
+		"dev":     "dotenv  -v ExecutionContext=Development  astro dev",
+		"build":   "dotenv  -v ExecutionContext=Production   astro build",
+		"preview": "astro preview"
+	},
+
+	"dependencies": {
+		"astro": "1.2.6"
+	},
+
+	"devDependencies": {
+		"@types/node": "18.7.18",
+		"dotenv-cli":  "6.0.0",
+		"sass":        "1.54.9"
+	}
+
+}
