@@ -1,10 +1,10 @@
 ---
 
-import Layout from "../layouts/Main.astro"
+import Layout from "layouts/Main.astro"
 
-import CSS_Common      from "../styles/common.css?url"
-import CSS_Production  from "../styles/production.css?url"
-import CSS_Development from "../styles/development.css?url"
+import CSS_Common      from "./common.css?url"
+import CSS_Production  from "./production.css?url"
+import CSS_Development from "./development.css?url"
 
 const is_Production   = (process.env["ExecutionContext"] === "Production")
 const CSS_Environment = (is_Production ? CSS_Production : CSS_Development)
