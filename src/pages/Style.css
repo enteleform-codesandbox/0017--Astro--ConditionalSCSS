@@ -1,12 +1,15 @@
 
-ul{
-	width: max-content;
+nav{
+	display:        flex;
+	flex-direction: column;
+	width:          max-content;
+	gap:            1.5rem;
 }
 
-li{
-	margin-top:    1rem;
-	padding:       0rem 1.5rem;
+a{
+	padding:       1rem 1.25rem;
 	border:        2px solid black;
 	border-radius: 4px;
+	font-size:     2rem;
 	text-align:    center;
 }

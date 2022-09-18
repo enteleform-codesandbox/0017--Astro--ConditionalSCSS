@@ -4,5 +4,6 @@ html{
 }
 
 h1{
-	color: #FFF;
+	color:  #FFF;
+	border: 6px solid #777;
 }
